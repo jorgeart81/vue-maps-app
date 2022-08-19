@@ -1,7 +1,18 @@
 <script setup lang="ts">
-    
+import { usePlacesStore } from "@/composables";
+import MapView from '@/components/mapView/MapView.vue'
+import MyLocationBtn from "@/components/my-location-btn/MyLocationBtn.vue";
+import SearchBar from "../components/searchbar/SearchBar.vue";
+import TripDetails from "@/components/trip-details/TripDetails.vue";
+
+usePlacesStore()
 </script>
 
 <template>
-    <h1>HOME</h1>
+
+    <MapView />
+    <SearchBar />
+    <MyLocationBtn />
+    <TripDetails />
+
 </template>

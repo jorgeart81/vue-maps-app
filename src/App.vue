@@ -2,19 +2,24 @@
 </script>
 
 <template>
-  <div>
+  <!-- <div>
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
-  </div>
+  </div> -->
   <router-view></router-view>
+  <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
+
 </template>
 
 <style scoped>
 .logo {
-  height: 8em;
-  padding: 1.5em;
+  width: 100px;
+  /* padding: 1.5em; */
   will-change: filter;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
 }
 
 .logo:hover {
